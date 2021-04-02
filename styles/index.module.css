@@ -1,0 +1,79 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.info{
+  text-align: center;
+  width: 100%;
+  background: #80ae72;
+  color: #fdfdfe;
+}
+.box{
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.box:first-child{
+  background: #f4a3b4;
+  padding: 2rem 2rem 3rem;
+  box-shadow: 10px 10px 0px 0px rgb(101 119 184 / 90%);
+  margin: 0 auto 4rem;
+}
+.box span{
+  font-size: 4rem;
+  text-shadow: 3px 3px #e17e92;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+.card h4 {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.logo {
+  height: 1em;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
