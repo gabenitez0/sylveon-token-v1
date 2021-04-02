@@ -12,6 +12,8 @@ export default function Nav({visible, setVisible, nav}) {
             <a href="https://telegram.com" target="_blank">Telegram</a>
             <a href="https://pancakeswap.finance" target="_blank">BUY NOW</a>
         </nav>
-        <div className={styles.open} onClick={() => visible ? setVisible(false) : setVisible(true)}>ME</div>
+        <div className={styles.open} onClick={() => visible ? setVisible(false) : setVisible(true)}>
+            {visible ? <img src="/close.png"/> : <img src="/menu.png"/>}
+        </div>
     </>)
 }

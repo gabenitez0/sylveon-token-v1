@@ -7,7 +7,7 @@
     left: 0;
     bottom: 90px;
     background: rgb(0 0 0 / 80%);
-    padding: 0.5rem 0 0.8rem;
+    padding: .5rem 0;
     z-index: -1;
     opacity: 0;
 }
@@ -17,26 +17,23 @@
     color: white;
     font-size: 1.5rem;
     letter-spacing: 4px;
-    text-shadow: 2px 2px rgb(244 163 180 / 50%);
-    border-bottom: 3px solid rgb(253 253 254 / 80%);
+    border-bottom: 3px solid;
 }
 .nav a:hover{
-    border-bottom: 3px solid pink;
-}
-.nav a:active{
-    border-bottom: 2px solid;
+    text-shadow: 2px 2px rgb(225 126 146);
 }
 
 .open{
     position: fixed;
     background: white;
     box-shadow: 2px 2px 4px 1px rgb(0 0 0 / 25%);
-    bottom: 10px;
-    right: 10px;
-    padding: 1.5rem;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
     border-radius: 50%;
     z-index: 11;
     cursor: pointer;
+    line-height: 0;
 }
 
 @media screen and (min-width: 1000px){
@@ -47,6 +44,10 @@
         top: 0;
         bottom: unset;
         background: rgb(0 0 0 / 25%);
+    }
+    .nav a{
+        text-shadow: 2px 2px rgb(102 120 184);
+        border-bottom: 0;
     }
     .open{
         display: none;

@@ -8,11 +8,15 @@
     min-height: 600px;
 }
 
-.title {
+.header h1 {
     margin: 0;
     line-height: 1.15;
     color: white;
     text-shadow: 3px 3px #e78a9d;
+    font-size: 4rem;
+}
+.header p {
+    color: white;
 }
 
 .grid {
@@ -45,7 +49,6 @@
     .title {
         font-size: 5rem;
     }
-
 }
 
 @media screen and (min-width: 1000px){

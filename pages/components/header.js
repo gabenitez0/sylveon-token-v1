@@ -5,7 +5,7 @@ export default function Nav({title, desc}) {
         <div className={styles.header}>
             <div className={styles.grid}>
                 <div className={styles.card}>
-                    <h1 className={styles.title}>{title}</h1>
+                    <h1>{title}</h1>
                     <p>{desc}</p>
                 </div>
                 <div className={styles.card}>
