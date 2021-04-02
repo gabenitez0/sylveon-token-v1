@@ -31,10 +31,10 @@
 .countdown{
   max-width: 800px;
   background: #f4a3b4;
-  border: 2px solid #687cb1;
+  border: 4px solid #f9f9fb;
   padding: 2rem 2rem 3rem;
   box-shadow: 10px 10px 0px 0px rgb(101 119 184 / 90%);
-  margin: 0 auto 4rem;
+  margin: 2rem auto 4rem;
 }
 .countdown h2{
   text-shadow: 3px 3px #687cb1;

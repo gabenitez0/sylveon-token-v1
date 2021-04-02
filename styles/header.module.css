@@ -19,6 +19,19 @@
     color: white;
 }
 
+.button{
+    background: #6678b8;
+    border: 3px solid #f9f9fb;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    display: block;
+    box-shadow: 5px 5px 0px 0px rgb(95 100 99);
+}
+.button:hover{
+    background: #8696ce;
+}
+
 .grid {
     display: flex;
     flex-direction: column;
