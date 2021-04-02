@@ -16,7 +16,7 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <Header title="Sylveon Protocol" desc="On the Binance Smart Chain, Sylveon is a reflectionary, deflationary token that burns 1.2% of all fees and reflects 0.6% of all fees back to its holders & 0.6% is burnt reducing the total supply!"/>
+        <Header title="Sylveon Protocol" desc="Sylveon is a reflectionary, deflationary token that burns 1.2% of all fees and reflects 0.6% of all fees back to its holders & 0.6% is burnt reducing the total supply!"/>
         <div className={styles.info}>
           <div className={styles.countdown}>
             <h2>Fair Launch Countdown!</h2>
