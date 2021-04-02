@@ -10,6 +10,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Sylveon Protocol</title>
+        <meta
+          name="description"
+          content="Sylveon is a passive farming deflationary token. Every transaction has a fee of 1.2% where 0.6% is distributed among holders & 0.6% is burnt reducing the supply!"
+        />
       </Head>
       <main className={styles.main}>
         <Header title="Sylveon Protocol" desc="On the Binance Smart Chain, Sylveon is a reflectionary, deflationary token that burns 1.2% of all fees and reflects 0.6% of all fees back to its holders & 0.6% is burnt reducing the total supply!"/>
