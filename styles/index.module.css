@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .main {
@@ -19,9 +20,10 @@
   width: 100%;
   background: #80ae72;
   color: #fdfdfe;
+  padding: 1rem;
 }
 .box{
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   max-width: 800px;
   margin: auto;
 }

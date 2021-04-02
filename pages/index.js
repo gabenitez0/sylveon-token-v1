@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import Nav from './components/nav'
-import Header from './components/header'
+import Head from 'next/head';
+import Header from './components/header';
 import styles from '../styles/index.module.css';
 import Countdown from "react-countdown";
 
@@ -11,11 +10,9 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Sylveon Protocol</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Nav/>
-        <Header/>
+        <Header title="Sylveon Protocol" desc="On the Binance Smart Chain, Sylveon is a reflectionary, deflationary token that burns 1.2% of all fees and reflects 0.6% of all fees back to its holders & 0.6% is burnt reducing the total supply!"/>
         <div className={styles.info}>
           <div className={styles.box}>
             <h1>Fair Launch Countdown!</h1>
