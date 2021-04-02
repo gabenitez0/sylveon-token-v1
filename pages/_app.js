@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="/1.png" />
       </Head>
       <Nav visible={visible} setVisible={setVisible} nav={nav}/>
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
       <Footer/>
     </>
   );
