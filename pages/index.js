@@ -24,24 +24,18 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header title="Fair Launch Countdown" desc={<Countdown date={hoy + ahora}/>} />
-        {/*<div className={styles.info}>
-          <motion.div className={styles.countdown} initial="hidden" animate="visible" variants={variants} transition={{ delay: 1, duration: 1 }}>
-            <h2>Fair Launch Countdown!</h2>
-            <Countdown date={hoy + ahora} />
+        <div className={styles.grid}>
+          <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.4, duration: 1 }}>
+              <h2>About</h2>
+              <p>$SYL is programmed to reward holders while increasing in both liquidity and value.</p>
           </motion.div>
-          <div className={styles.box}>
-            <h2>About Sylveon Protocol</h2>
-            <p>Sylveon has the ability to reflect any token it receives back to the suppliers of its token. It rewards holders for holding Sylveon Token. Instant yield.</p>
-          </div>
-          <div className={styles.box}>
-            <h2>Tokenomics</h2>
-            <p>Sylveon is a passive farming deflationary token. Every transaction has a fee of 1.2% where 0.6% is distributed among holders & 0.6% is burnt reducing the supply!</p>
-          </div>
-          <div className={styles.box}>
-            <h2>Fast and low cost</h2>
-            <p>Sylveon run on Binance Smart Chain. Token holders pay very little fees and get quick confirmations on the blockchain.</p>
-          </div>
-        </div>*/}
+          <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.8, duration: 1 }}>
+              <h2>Tokenomics</h2>
+              <p>2% goes to holders</p>
+              <p>2% goes to auto locked liquidity</p>
+              <p>6% slippage tolerance</p>
+          </motion.div>
+      </div>
       </main>
     </div>
   )

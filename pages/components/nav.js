@@ -13,7 +13,7 @@ export default function Nav({visible, setVisible, nav}) {
                 {/*<Link href="/"><a onClick={() => setVisible(false)}>Home</a></Link>
                 <Link href="/roadmap"><a onClick={() => setVisible(false)}>Roadmap</a></Link>*/}
                 <a href="https://bscscan.com" target="_blank">Contract</a>
-                <a href="https://telegram.com" target="_blank">Telegram</a>
+                <a href="https://t.me/sylveonprotocol" target="_blank">Telegram</a>
                 <a href="https://pancakeswap.finance" target="_blank">BUY NOW</a>
             </div>
         </nav>
