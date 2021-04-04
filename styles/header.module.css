@@ -44,12 +44,12 @@
     background: #fff8e8;
     padding: 1rem;
     border-radius: 2px;
-    border: 2px solid #d74455;
+    border: 2px solid #234c76;
     box-shadow: 2px 2px 11px -3px rgb(0 0 0 / 30%);
     margin: .5rem;
 }
 .intro .buttons a:hover{
-    border: 2px solid #234c76;
+    border: 2px solid #d74455;
 }
 
 @media screen and (min-width: 450px){
