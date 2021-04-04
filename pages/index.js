@@ -33,7 +33,7 @@ export default function Home() {
               <h2>Tokenomics</h2>
               <p>2% goes to holders</p>
               <p>2% goes to auto locked liquidity</p>
-              <p>6% slippage tolerance</p>
+              <p>Use 6% slippage tolerance</p>
           </motion.div>
       </div>
       </main>

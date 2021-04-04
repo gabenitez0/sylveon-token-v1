@@ -872,8 +872,8 @@ contract SAFEUNI is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "SAFEUNIVERSE";
-    string private _symbol = "SFU";
+    string private _name = "Sylveon Protocol";
+    string private _symbol = "SYL";
     uint8 private _decimals = 9;
 
     uint256 public _taxFee = 2;
