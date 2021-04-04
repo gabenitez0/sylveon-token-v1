@@ -38,12 +38,12 @@
   position: relative;
 }
 .countdown h2{
-  text-shadow: 3px 3px #687cb1;
+  text-shadow: 3px 3px #234c76;
   margin: 2rem 0;
 }
 .countdown span{
   font-size: 4rem;
-  text-shadow: 3px 3px #687cb1;
+  text-shadow: 3px 3px #234c76;
 }
 
 .code {

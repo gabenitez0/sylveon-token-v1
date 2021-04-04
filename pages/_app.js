@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Nav visible={visible} setVisible={setVisible} nav={nav}/>
       <Component {...pageProps}/>
-      <Footer/>
+      {/*<Footer/>*/}
     </>
   );
 }

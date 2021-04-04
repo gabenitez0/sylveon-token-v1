@@ -23,8 +23,8 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <Header title="Sylveon Protocol" desc="Sylveon is a reflectionary, deflationary token that burns 1.2% of all fees and reflects 0.6% of all fees back to its holders & 0.6% is burnt reducing the total supply!"/>
-        <div className={styles.info}>
+        <Header title="Fair Launch Countdown" desc={<Countdown date={hoy + ahora}/>} />
+        {/*<div className={styles.info}>
           <motion.div className={styles.countdown} initial="hidden" animate="visible" variants={variants} transition={{ delay: 1, duration: 1 }}>
             <h2>Fair Launch Countdown!</h2>
             <Countdown date={hoy + ahora} />
@@ -41,7 +41,7 @@ export default function Home() {
             <h2>Fast and low cost</h2>
             <p>Sylveon run on Binance Smart Chain. Token holders pay very little fees and get quick confirmations on the blockchain.</p>
           </div>
-        </div>
+        </div>*/}
       </main>
     </div>
   )
