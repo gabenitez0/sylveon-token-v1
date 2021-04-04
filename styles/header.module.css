@@ -19,8 +19,7 @@
     max-height: 200px;
 }
 .intro h1 {
-    margin: 0;
-    line-height: 1.5;
+    margin: 0 0 1rem;
     color: #fff8e8;
     text-shadow: 3px 3px #d74455;
     font-size: 3rem;
