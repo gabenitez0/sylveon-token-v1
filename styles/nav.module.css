@@ -24,6 +24,11 @@
 .nav a:hover{
     text-shadow: 2px 2px #d74455;
 }
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 .logo{
     max-width: 300px;
@@ -68,5 +73,9 @@
     }
     .open{
         display: none;
+    }
+    .menu{
+        flex-direction: row;
+        width: unset;
     }
 }

@@ -9,7 +9,7 @@ export default function Nav({visible, setVisible, nav}) {
                 <img src="/2.gif"/>
                 <h1>Sylveon Protocol</h1>
             </div>
-            <div>
+            <div className={styles.menu}>
                 {/*<Link href="/"><a onClick={() => setVisible(false)}>Home</a></Link>
                 <Link href="/roadmap"><a onClick={() => setVisible(false)}>Roadmap</a></Link>*/}
                 <a href="https://bscscan.com" target="_blank">Contract</a>
