@@ -14,7 +14,7 @@ export default function Nav({title, desc}) {
                     <h1>{title}</h1>
                     <span>{desc}</span>
                     <div className={styles.buttons}>
-                        <a href="https://t.me/sylveonprotocol" target="_blank">Join on Telegram</a>
+                        <a href="https://t.me/sylveon_protocol" target="_blank">Join on Telegram</a>
                         <a href="https://pancakeswap.finance" target="_blank">Buy on Pancake</a>
                     </div>
                 </motion.div>

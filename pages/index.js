@@ -27,13 +27,14 @@ export default function Home() {
         <div className={styles.grid}>
           <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.4, duration: 1 }}>
               <h2>About</h2>
-              <p>$SYL is programmed to reward holders while increasing in both liquidity and value.</p>
+              <p>🤖 $SYL is programmed to reward holders while increasing in both liquidity and value. On each transaction the protocol automotically distribute rewards to holder, auto-locks liquidity, buy back tokens, and insure funds. It does this by applying a, 4% tax on transactions.</p>
           </motion.div>
           <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.8, duration: 1 }}>
               <h2>Tokenomics</h2>
-              <p>2% goes to holders</p>
-              <p>2% goes to auto locked liquidity</p>
-              <p>Use 6% slippage tolerance</p>
+              <p>2% goes to holders 🤝</p>
+              <p>2% goes to burn 🔥</p>
+              <p>$0.00002 Initial Price 💎</p>
+              <p>Use 6% slippage tolerance 🚀</p>
           </motion.div>
       </div>
       </main>

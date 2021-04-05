@@ -1,9 +1,5 @@
-/**
- *Submitted for verification at BscScan.com on 2021-04-03
-*/
-
 pragma solidity ^0.6.12;
-
+// SPDX-License-Identifier: MIT
 interface IERC20 {
     function totalSupply() external view returns (uint256);
 
@@ -854,7 +850,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
 
-contract SAFEUNI is Context, IERC20, Ownable {
+contract SYLVEON is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -910,7 +906,7 @@ contract SAFEUNI is Context, IERC20, Ownable {
         _rOwned[_msgSender()] = _rTotal;
 
         IUniswapV2Router02 _uniswapV2Router =
-            IUniswapV2Router02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
+            IUniswapV2Router02(0xdDcfa147c8DdD6004CE84817Be9ad98d88CAdd31);
         // Create a uniswap pair for this new token
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
             .createPair(address(this), _uniswapV2Router.WETH());
