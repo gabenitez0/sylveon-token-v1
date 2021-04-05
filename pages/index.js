@@ -19,7 +19,7 @@ export default function Home() {
         <title>Sylveon Protocol</title>
         <meta
           name="description"
-          content="Sylveon is a passive farming deflationary token. Every transaction has a fee of 1.2% where 0.6% is distributed among holders & 0.6% is burnt reducing the supply!"
+          content="🤖 $SYL is programmed to reward holders while increasing in both liquidity and value. On each transaction the protocol automotically distribute rewards to holder, auto-locks liquidity, buy back tokens, and insure funds."
         />
       </Head>
       <main className={styles.main}>
