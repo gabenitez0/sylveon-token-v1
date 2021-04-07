@@ -16,23 +16,32 @@ h1{
   font-size: 3rem;
 }
 h2{
-  color: #fff8e8;
-  letter-spacing: 8px;
-  text-shadow: 2px 2px #234c76;
-  font-size: 2.5rem;
+  letter-spacing: 4px;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px #c5b284;
 }
 p{
-  color: #fff8e8;
   line-height: 1.2;
   font-size: 2rem;
-  text-shadow: 2px 2px #234c76;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
+ul{
+  line-height: 1.2;
+  font-size: 2rem;
+  padding: 0;
+  list-style: khmer inside;
+  text-shadow: 2px 2px #c5b284;
+}
+li{
+  padding-bottom: 1rem;
+}
+::marker{
+  font-weight: 600;
+}
 * {
   box-sizing: border-box;
 }

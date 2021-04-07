@@ -1,5 +1,5 @@
 .nav{
-    display:flex;
+    display:none;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     padding: .5rem 0;
     z-index: -1;
     opacity: 0;
-    transition: all .2s ease-out;
+    transition: all .5s ease-out;
 }
 .nav a{
     padding: 1rem;
@@ -37,12 +37,14 @@
 }
 .logo img{
     max-width: 35%;
+    transition: all .5s ease;
 }
 .logo h1{
     font-size: 2.5rem;
-    padding: 1rem;
+    padding: 0 .5rem;
     margin: 0;
     color: #fff8e8;
+    transition: all .5s ease;
 }
 .open{
     position: fixed;
@@ -56,18 +58,45 @@
     cursor: pointer;
     line-height: 0;
 }
+.phone{
+    position: fixed;
+    background: rgb(0 0 0 / 85%);
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: -2px -2px 11px -3px rgb(0 0 0 / 30%);
+    transition: all .5s ease;
+    padding: 2rem 1rem;
+    overflow: auto;
+}
+.phone .logo{
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+.phone a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #fff8e8;
+    border-bottom: 1px solid #fff8e8;
+}
 
 @media screen and (min-width: 1000px){
     .nav{
+        display:flex;
         flex-direction: row;
         z-index: 11!important;
         opacity: 1!important;
-        max-width: 1000px;
         top: 0;
-        left: calc(50% - 500px);
+        left: 0;
         bottom: unset;
         background: none;
-        padding: .5rem 0;
+        padding: .5rem;
     }
     .nav a{
         text-shadow: 2px 2px #234c76;
@@ -79,5 +108,8 @@
     .menu{
         flex-direction: row;
         width: unset;
+    }
+    .phone{
+        display: none;
     }
 }

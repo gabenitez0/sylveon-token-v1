@@ -1,16 +1,10 @@
 import Head from 'next/head';
 import '../styles/globals.css';
-import { useState } from "react";
 
 import Nav from './components/nav';
 import Footer from './components/footer';
 
 function MyApp({ Component, pageProps }) {
-  const [visible, setVisible] = useState(false);
-  const nav = {
-    opacity: visible ? 1 : 0,
-    zIndex: visible ? 10 : -1,
-  };
   return (
     <>
       <Head>
@@ -19,9 +13,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta property="og:image" content="/1.png" />
       </Head>
-      <Nav visible={visible} setVisible={setVisible} nav={nav}/>
+      <Nav/>
       <Component {...pageProps}/>
-      {/*<Footer/>*/}
+      <Footer/>
     </>
   );
 }
