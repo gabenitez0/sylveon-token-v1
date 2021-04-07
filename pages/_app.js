@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <link rel="icon" href="favicon.gif" type="image/gif" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta property="og:image" content="/og.jpg" />
+        <meta property="og:image" content="/og.JPG" />
       </Head>
       <Nav/>
       <Component {...pageProps}/>
