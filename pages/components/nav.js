@@ -47,9 +47,9 @@ export default function Nav() {
             <div className={styles.menu}>
                 <Link href="/"><a onClick={() => setVisible(false)}>Home</a></Link>
                 <Link href="/roadmap"><a onClick={() => setVisible(false)}>Roadmap</a></Link>
-                <a href="https://bscscan.com" target="_blank">Contract</a>
                 <a href="https://t.me/sylveon_protocol" target="_blank">Telegram</a>
-                <a href="https://pancakeswap.finance" target="_blank">BUY NOW</a>
+                <a>Contract</a>
+                <a>BUY NOW</a>
             </div>
         </motion.div>
     </>)
