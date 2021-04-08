@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "home": "Home",
+        "roadmap": "Roadmap",
+        "telegram": "Telegram",
+        "contract": "Contract",
+        "buy": "BUY NOW"
+    },
+    "home": {
+        "title": "Fair Launch Countdown",
+        "subtitle": "Fair Launch Coming Soon",
+        "button1": "View Roadmap",
+        "button2": "Join on Telegram",
+        "about": {
+            "title": "About",
+            "desc": "$SYL is a BSC Token programmed to reward holders through a deflationary ecosystem. In each transaction, a burning and repurchase of tokens is carried out, in addition to contributing to continue growing."
+        },
+        "tokenomics": {
+            "title": "Tokenomics",
+            "desc": "In each transaction:",
+            "list": ["1% goes to burn 🔥", "1% goes to re-buy tokens 💰", "1% goes to dev & marketing costs 🎯"]
+        }
+    },
+    "roadmap": {
+        "title": "Roadmap",
+        "subtitle": "How are we going to achieve goals",
+        "first": {
+            "title": "High Priority",
+            "desc": "These are our short-term objectives and focused on the first investors and holders.",
+            "list": ["Unique burn mechanism & deflationary ecosystem ✅", "100 Members on Telegram to Website Deploy ✅", "Deployment of smart contracts & Liquidity Lock", "300 Members on Telegram to Fair Launch!"]
+        },
+        "second": {
+            "title": "Medium Priority",
+            "desc": "These objectives are so that more people continue to come to the project and that the first holders begin to see the price of their tokens grow.",
+            "list": ["Marketing and advertising campaing", "Instagram, Twitter & Reddit fanpage", "Medium site", "Gitbook site", "Audits", "Listing on Coingecko"]
+        },
+        "third": {
+            "title": "Future objectives",
+            "desc": "These are our short-term objectives and focused on the first investors and holders",
+            "list": ["Yield Farming (AMM)", "Fully operational exchange", "Betting, Lotteries & Games", "New Tokens", "Community ideas"],
+            "pd": "PS: this section of the roadmap will be updated and improved over time."
+        }
+    }
+}

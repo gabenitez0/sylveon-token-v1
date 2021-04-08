@@ -2,13 +2,15 @@ import styles from '../../styles/nav.module.css';
 import Link from 'next/link';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
+import LangSelector from '../modules/LangSelector';
 
-export default function Nav() {
+export default function Nav(props) {
+    const { lang } = props;
+
     const [visible, setVisible] = useState(false);
     const [isTop, setIsTop] = useState(true);
     const { scrollY } = useViewportScroll();
 
-    
     const nav = {
         background: isTop ? "none" : "rgb(23 49 74 / 51%)",
         boxShadow: isTop ? "none" : "2px 2px 11px -3px rgb(0 0 0 / 30%)"
@@ -34,6 +36,7 @@ export default function Nav() {
                 <a href="https://t.me/sylveon_protocol" target="_blank">Telegram</a>
                 <a>Contract</a>
                 <a>BUY NOW</a>
+                <LangSelector/>
             </div>
         </nav>
         <div className={styles.open} onClick={() => visible ? setVisible(false) : setVisible(true)}>
@@ -50,7 +53,18 @@ export default function Nav() {
                 <a href="https://t.me/sylveon_protocol" target="_blank">Telegram</a>
                 <a>Contract</a>
                 <a>BUY NOW</a>
+                <LangSelector/>
             </div>
         </motion.div>
     </>)
+}
+
+export async function getStaticProps({locale}) {
+    const response = await import(`./../lang/${locale}.json`);
+    console.log(response.default.nav);
+    return {
+        props: {
+            nav: response.default.nav,
+        }
+    }
 }

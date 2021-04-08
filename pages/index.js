@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Header from './components/header';
 import styles from '../styles/index.module.css';
 import { motion } from "framer-motion";
-//import Countdown from "react-countdown";
+import Countdown from "react-countdown";
 
-export default function Home() {
-  //const ahora = Date.now();
-  //const hoy = new Date(); hoy.setHours(24, 0, 0);
+export default function Home(props) {
+  const { home } = props;
+
+  const lanzamiento = new Date(2021, 4, 10, 0, 0, 0);
 
   const variants = {
     hidden: { opacity: 0, left: "-100px" },
@@ -23,22 +24,34 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <Header title="Welcome Sylveon Protocol" desc={/*<Countdown date={hoy + ahora}/>*/ "Fair Launch Coming Soon"} />
+        <Header title={home.title} button1={home.button1} button2={home.button2} desc={<Countdown date={lanzamiento}/>} />
         <div className={styles.content}>
           <div className={styles.grid}>
             <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.4, duration: 1 }}>
-                <h2>About</h2>
-                <p>$SYL is a BSC Token programmed to reward holders through a deflationary ecosystem. In each transaction, a burning and repurchase of tokens is carried out, in addition to contributing to continue growing.</p>
+                <h2>{home.about.title}</h2>
+                <p>{home.about.desc}</p>
             </motion.div>
             <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 0.8, duration: 1 }}>
-                <h2>Tokenomics</h2>
-                <p>1% goes to burn 🔥</p>
-                <p>1% goes to re-buy tokens 💰</p>
-                <p>1% goes to dev & marketing costs 🎯</p>
+                <h2>{home.tokenomics.title}</h2>
+                <p>{home.tokenomics.desc}</p>
+                <ul>
+                  {home.tokenomics.list.map(li =>
+                    <li key={Math.random()}>{li}</li>
+                  )}
+                </ul>
             </motion.div>
         </div>
       </div>
       </main>
     </div>
   )
+}
+
+export async function getStaticProps({locale}) {
+  const response = await import(`./lang/${locale}.json`);
+  return {
+    props: {
+      home: response.default.home,
+    }
+  }
 }

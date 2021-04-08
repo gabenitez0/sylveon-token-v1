@@ -4,7 +4,9 @@ import styles from '../styles/index.module.css';
 import { motion } from "framer-motion";
 //import Countdown from "react-countdown";
 
-export default function Home() {
+export default function Home(props) {
+  const { roadmap } = props;
+
   const variants = {
     hidden: { opacity: 0, left: "-100px" },
     visible: { opacity: 1, left: 0 },
@@ -19,44 +21,49 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <Header title="Roadmap" desc="How are we going to achieve goals"/>
+        <Header title={roadmap.title} desc={roadmap.subtitle}/>
         <div className={styles.content}>
           <div className={styles.grid}>
             <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 1.2, duration: 1 }}>
-                <h2>Urgent Priority</h2>
-                <p>These are our short-term objectives and focused on the first investors and holders.</p>
+                <h2>{roadmap.first.title}</h2>
+                <p>{roadmap.first.desc}</p>
                 <ul>
-                  <li>Unique burn mechanism & deflationary ecosystem ✅</li>
-                  <li>100 Members on Telegram to Website Deploy ✅</li>
-                  <li>Deployment of smart contracts & Liquidity Lock</li>
-                  <li>300 Members on Telegram to Fair Launch!</li>
+                  {roadmap.first.list.map(li =>
+                    <li key={Math.random()}>{li}</li>
+                  )}
                 </ul>
             </motion.div>
             <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 1.6, duration: 1 }}>
-                <h2>High Priority</h2>
-                <p>These objectives are so that more people continue to come to the project and that the first holders begin to see the price of their tokens grow.</p>
+            <h2>{roadmap.second.title}</h2>
+                <p>{roadmap.second.desc}</p>
                 <ul>
-                  <li>Marketing and advertising campaing</li>
-                  <li>Instagram, Twitter & Reddit fanpage</li>
-                  <li>Medium site</li>
-                  <li>Gitbook site</li>
+                  {roadmap.second.list.map(li =>
+                    <li>{li}</li>
+                  )}
                 </ul>
             </motion.div>
             <motion.div className={styles.card} initial="hidden" animate="visible" variants={variants} transition={{ delay: 2.0, duration: 1 }}>
-                <h2>Future objectives</h2>
-                <p>These are our future goals so that the price continues to grow and more people continue to join the project.</p>
+              <h2>{roadmap.third.title}</h2>
+                <p>{roadmap.third.desc}</p>
                 <ul>
-                  <li>Yield Farming (AMM)</li>
-                  <li>Fully operational exchange</li>
-                  <li>Betting, Lotteries & Games</li>
-                  <li>New Tokens</li>
-                  <li>Community ideas</li>
+                  {roadmap.third.list.map(li =>
+                    <li>{li}</li>
+                  )}
                 </ul>
-                <p>PS: this section of the roadmap will be updated and improved over time.</p>
             </motion.div>
         </div>
       </div>
       </main>
     </div>
   )
+}
+
+
+export async function getStaticProps({locale}) {
+  const response = await import(`./lang/${locale}.json`);
+  return {
+    props: {
+      roadmap: response.default.roadmap,
+    }
+  }
 }

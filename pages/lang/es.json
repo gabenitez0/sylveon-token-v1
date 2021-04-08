@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "roadmap": "Roadmap",
+        "telegram": "Telegram",
+        "contract": "Contrato",
+        "buy": "COMPRAR"
+    },
+    "home": {
+        "title": "Countdown Lanzamiento",
+        "subtitle": "Fair Launch Coming Soon",
+        "button1": "Ver Roadmap",
+        "button2": "Entrar a Telegram",
+        "about": {
+            "title": "Acerca de",
+            "desc": "$SYL es un Token BSC programado para recompensar a los titulares a través de un ecosistema deflacionario. En cada transacción, se lleva a cabo una quema y recompra de tokens, además de contribuir a continuar creciendo."
+        },
+        "tokenomics": {
+            "title": "Tokenomics",
+            "desc": "En cada transacción:",
+            "list": ["1% se quema 🔥", "1% para re-compra del token 💰", "1% se destina a costos de desarrollo y marketing 🎯"]
+        }
+    },
+    "roadmap": {
+        "title": "Roadmap",
+        "subtitle": "Cómo vamos a alcanzar los objetivos",
+        "first": {
+            "title": "Alta Prioridad",
+            "desc": "Estos son nuestros objetivos a corto plazo y enfocados a los primeros inversores y holders.",
+            "list": ["Mecanismo de quema único y ecosistema deflacionario ✅", "100 Miembros en Telegram para el lanzamiento del sitio web ✅", "Lanzamiento del Contrato y Bloqueo de Liquidez", "300 Miembros en Telegram para Lanzamiento Directo!"]
+        },
+        "second": {
+            "title": "Mediana Prioridad",
+            "desc": "Estos objetivos son para que sigan llegando más personas al proyecto y que los primeros poseedores empiecen a ver crecer el valor de sus tokens.",
+            "list": ["Campaña de marketing y publicidad", "Instagram, Twitter & Reddit fanpage", "Sitio en Medium", "Sitio en Gitbook", "Auditorías", "Listamiento en Coingecko"]
+        },
+        "third": {
+            "title": "Objetivos a futuro",
+            "desc": "Estos son nuestros objetivos a futuro, para que el precio se mantenga y siga creciendo, y más personas sigan uniéndose al proyecto.",
+            "list": ["Yield Farming (AMM)", "Fully operational exchange", "Apuestas, Loterías & Juegos", "Nuevos Tokens", "Ideas de la comunidad"],
+            "pd": "PD: esta sección de roadmap se actualizará y mejorará con el tiempo."
+        }
+    }
+}
